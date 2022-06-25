@@ -1,0 +1,17 @@
+{
+  "name": "vue-cli-dynamic-import-debug",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "scripts": {
+    "build": "cp yarn.lock.bak yarn.lock && yarn && vue-cli-service build",
+    "build:error": "rm -rf yarn.lock && yarn && vue-cli-service build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "4.5.17",
+    "@vue/cli-service": "4.5.17"
+  }
+}
