@@ -4,8 +4,10 @@
   "description": "",
   "private": true,
   "scripts": {
-    "build": "cp yarn.lock.bak yarn.lock && yarn && vue-cli-service build",
-    "build:error": "rm -rf yarn.lock && yarn && vue-cli-service build"
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "build:normal": "cp yarn.lock.bak yarn.lock && yarn && yarn build",
+    "build:error": "rm -rf yarn.lock && yarn --registry=https://registry.npmmirror.com && yarn build"
   },
   "keywords": [],
   "author": "",
